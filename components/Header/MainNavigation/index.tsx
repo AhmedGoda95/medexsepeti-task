@@ -17,7 +17,7 @@ const MainNavigation = () => {
       })}
     >
       <Grid container justifyContent="center">
-        <Grid item lg={8}>
+        <Grid item xs={12} lg={10} xl={8}>
           <Box
             sx={{
               display: "flex",

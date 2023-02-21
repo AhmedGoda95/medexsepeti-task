@@ -21,9 +21,10 @@ const SearchBar = () => {
         },
         backgroundColor: "#fff",
         width: {
-          xs: 250,
-          md: 300,
-          xl: 400,
+          xs: 300,
+          sm: 400,
+          lg: 375,
+          xl: 500,
         },
         borderRadius: 1,
       }}

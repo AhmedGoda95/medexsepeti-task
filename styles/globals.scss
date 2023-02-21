@@ -42,3 +42,14 @@ body {
     }
   }
 }
+
+.productItem:hover {
+  .addToCart {
+    bottom: 0;
+    button:hover {
+      color: #22b0f0;
+      background-color: #d8f0fa;
+      box-shadow: none;
+    }
+  }
+}

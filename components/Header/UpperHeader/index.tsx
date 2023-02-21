@@ -12,10 +12,14 @@ const UpperHeader = () => {
       sx={(theme) => ({
         backgroundColor: theme.palette.primary.main,
         paddingBlock: 2.5,
+        paddingInline: {
+          xs: 2,
+          lg: 0,
+        },
       })}
     >
       <Grid container justifyContent="center">
-        <Grid item lg={8}>
+        <Grid item xs={12} lg={10} xl={8}>
           <Toolbar
             disableGutters
             sx={{
@@ -38,7 +42,7 @@ const UpperHeader = () => {
                 textAlign: "center",
                 width: {
                   xs: "100%",
-                  md: "auto",
+                  lg: "auto",
                 },
                 marginTop: {
                   xs: 1,

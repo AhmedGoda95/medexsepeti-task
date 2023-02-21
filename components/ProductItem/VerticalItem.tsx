@@ -1,6 +1,7 @@
 import { IProductItem } from "@/types";
 import { Box } from "@mui/material";
 import { FC } from "react";
+import AddToCart from "./components/AddToCart";
 import ProductFav from "./components/ProductFav";
 import ProductImage from "./components/ProductImage";
 import ProductName from "./components/ProductName";
@@ -20,15 +21,15 @@ const VerticalItem: FC<IProductItem> = ({
         position: "relative",
         border: "2px solid #f2f2f2",
         borderRadius: 4,
-        paddingBlock: "30px 24px",
-        paddingInline: 1.5,
+        paddingTop: 4,
       }}
+      className="productItem"
     >
       <Box
         sx={{
           borderBottom: "1px solid #f7f7f7",
           paddingBottom: 2,
-          marginBottom: 2,
+          paddingInline: 1.5,
         }}
       >
         <ProductFav />
@@ -36,12 +37,17 @@ const VerticalItem: FC<IProductItem> = ({
       </Box>
       <Box
         sx={{
-          paddingInline: 1,
+          marginTop: 2,
+          paddingInline: 2.5,
+          position: "relative",
+          paddingBottom: 3,
+          overflow: "hidden",
         }}
       >
         <ProductRating rating={rating} />
         <ProductName name={name} />
         <ProductPrice price={price} oldPrice={oldPrice} />
+        <AddToCart bottom={-150} borderRadius="0 0 16px 16px" />
       </Box>
     </Box>
   );

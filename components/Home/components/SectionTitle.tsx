@@ -14,6 +14,10 @@ const SectionTitle: FC<{
         color,
         fontSize: 28,
         fontWeight: 600,
+        paddingLeft: {
+          xs: 1,
+          md: 0,
+        },
       }}
     >
       {title}

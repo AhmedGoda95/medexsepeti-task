@@ -6,6 +6,7 @@ import ProductPrice from "./components/ProductPrice";
 import ProductRating from "./components/ProductRating";
 import { FC } from "react";
 import { IProductItem } from "@/types";
+import AddToCart from "./components/AddToCart";
 
 const HorizontalItem: FC<IProductItem> = ({
   name,
@@ -20,20 +21,28 @@ const HorizontalItem: FC<IProductItem> = ({
         position: "relative",
         border: "2px solid #f2f2f2",
         borderRadius: 4,
-        paddingBlock: "24px 18px",
-        paddingInline: 1.5,
         display: "flex",
         alignItems: "center",
       }}
+      className="productItem"
     >
-      <Box>
-        <ProductFav />
+      <ProductFav />
+      <Box
+        sx={{
+          position: "relative",
+          paddingBlock: "24px 18px",
+          paddingLeft: 1.5,
+          overflow: "hidden",
+        }}
+      >
         <ProductImage name={name} src={src} />
+        <AddToCart bottom={-250} borderRadius="16px 0 0 16px" />
       </Box>
       <Box
         sx={{
-          paddingInline: 1,
+          paddingInline: 2,
           marginLeft: 2,
+          paddingBlock: "24px 18px",
         }}
       >
         <ProductRating rating={rating} />

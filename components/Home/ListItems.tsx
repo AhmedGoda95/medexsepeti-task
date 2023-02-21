@@ -29,6 +29,10 @@ const ListItems: FC<{
         "& .swiper-slide": {
           marginTop: "10px !important",
         },
+        paddingInline: {
+          xs: 1,
+          md: 0,
+        },
       }}
     >
       <SectionTitle title={title} />
