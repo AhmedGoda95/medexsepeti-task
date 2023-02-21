@@ -1,0 +1,37 @@
+.navigationItem {
+  position: relative;
+  transition: all 0.1s ease;
+
+  &:after {
+    content: "";
+    width: 1px;
+    height: 25px;
+    background-color: #5b7084;
+    position: absolute;
+    right: 0;
+  }
+  &:hover {
+    border-bottom-color: #f9ba32;
+    color: #f9ba32;
+  }
+}
+
+.firstnavigationItem,
+.lastnavigationItem {
+  color: #fff;
+  border-radius: 5px;
+}
+
+.firstnavigationItem {
+  background-color: #19a4e3;
+  &:hover {
+    color: #f9ba32;
+  }
+}
+
+.lastnavigationItem {
+  background-color: #000;
+  &:hover {
+    border-bottom-color: #f9ba32;
+  }
+}
