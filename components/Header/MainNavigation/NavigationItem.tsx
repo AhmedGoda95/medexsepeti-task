@@ -12,7 +12,10 @@ const NavigationItem: FC<NavigationItemProps> = ({
       component="h2"
       sx={(theme) => ({
         textAlign: "center",
-        fontSize: 13,
+        fontSize: {
+          md: 11,
+          lg: 13,
+        },
         fontWeight: 600,
         height: "55px",
         color: "#28527a",
@@ -24,7 +27,10 @@ const NavigationItem: FC<NavigationItemProps> = ({
         "& a": {
           textDecoration: "none",
           color: "inherit",
-          paddingInline: 1,
+          paddingInline: {
+            md: 0.5,
+            lg: 1,
+          },
           width: "100%",
           height: "100%",
           display: "flex",

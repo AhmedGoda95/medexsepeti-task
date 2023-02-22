@@ -12,7 +12,7 @@ const MainNavigation = () => {
         boxShadow: "0px 3px 6px #00000029",
         display: {
           xs: "none",
-          lg: "block",
+          md: "block",
         },
       })}
     >

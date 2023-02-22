@@ -1,5 +1,6 @@
 import SearchIcon from "@mui/icons-material/Search";
 import { IconButton, TextField, InputAdornment } from "@mui/material";
+import SidebarButton from "./SidebarButton";
 
 const SearchBar = () => {
   return (
@@ -18,11 +19,12 @@ const SearchBar = () => {
         },
         "& .MuiInputBase-root": {
           paddingRight: 0,
+          paddingLeft: 0,
         },
         backgroundColor: "#fff",
         width: {
-          xs: 300,
-          sm: 400,
+          xs: "100%",
+          md: 400,
           lg: 375,
           xl: 500,
         },
@@ -45,6 +47,7 @@ const SearchBar = () => {
             </IconButton>
           </InputAdornment>
         ),
+        startAdornment: <SidebarButton />,
       }}
     />
   );
